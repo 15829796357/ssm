@@ -1,7 +1,5 @@
 package com.how2java.controller;
  
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,12 +14,12 @@ public class PageController {
         return "index";
     }
      
-    @RequiresPermissions("deleteOrder")
+//  @RequiresPermissions("deleteOrder")
     @RequestMapping("deleteOrder")
     public String deleteOrder(){
         return "deleteOrder";
     }
-    @RequiresRoles("admin")
+//  @RequiresRoles("productManager")
     @RequestMapping("deleteProduct")
     public String deleteProduct(){
         return "deleteProduct";

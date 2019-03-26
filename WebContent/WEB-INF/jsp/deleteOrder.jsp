@@ -8,7 +8,7 @@
  
 <div class="workingroom">
  
-    deleteProduct.jsp，能进来<br>就表示拥有 deleteProduct 权限
+    deleteOrder.jsp，能进来<br>就表示拥有 deleteOrder 权限
     <br>
     <a href="#" onClick="javascript:history.back()">返回</a>
 </div>

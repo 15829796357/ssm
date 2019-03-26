@@ -1,44 +1,43 @@
 package com.how2java.pojo;
 
 public class User {
+    private Long id;
 
-	private int uid;
-	
-	private String username;
-	
-	private String password;
-	
-	public int getUid() {
-		return uid;
-	}
+    private String name;
 
-	public void setUid(int uid) {
-		this.uid = uid;
-	}
+    private String password;
 
-	public String getUsername() {
-		return username;
-	}
+    private String salt;
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
 
-	@Override
-	public String toString() {
-		return "User [uid=" + uid + ", username=" + username + ", password=" + password + "]";
-	}
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
+    }
 
-	
-	
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt == null ? null : salt.trim();
+    }
 }
