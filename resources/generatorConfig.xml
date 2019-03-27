@@ -61,6 +61,11 @@
             <property name="useActualColumnNames" value="true"/>
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
+        <table tableName="user_persion" domainObjectName="UserPersion" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="false">
+            <property name="my.isgen.usekeys" value="true"/>
+            <property name="useActualColumnNames" value="true"/>
+            <generatedKey column="pid" sqlStatement="JDBC"/>
+        </table>
  
     </context>
 </generatorConfiguration>
